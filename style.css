@@ -2,24 +2,28 @@
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 :root{
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #333333;
 }
+body{
+  background-color: #f5f4f0;
+}
 main{
 width: 1120px;
-margin: 88px auto 137px;
+margin: 88px auto 65px;
 }
-.title{
+section.title{
   margin-bottom: 40px;
 }
-.headline{
+span.headline{
   color: #E1624F;
   text-transform: uppercase;
 }
-.headline,h1,h2,h3{
+span.headline,h1,h2,h3, span, ul li{
   font-weight: 700;
 }
 h1, h2, h3{
@@ -33,30 +37,68 @@ img{
   border-radius: 28px;
   width: 100%;
 }
-.subtitle{
+p.subtitle{
   line-height: 22px;
   color: #333333;
-  text-align: center;
   font-style: italic;
   margin-top: 24px;
 }
-.divider{
+p.subtitle,main > p{
+  text-align: center;
+}
+div.divider{
   width: 100%;
   height: 1px;
   background-color: #D9D9D9;
   margin: 40px 0;
 }
-.title-list{
+div.title-list{
   margin: 64px 0;
 }
 h2{
   font-size: 32px;
   margin: 2px 0 8px;
 }
-.card-travel{
+div.card-travel{
   margin-bottom: 48px;
 }
+div.card-travel img{
+  height: 350px;
+  object-fit: cover;
+}
 
+div.bottom{
+  margin-bottom: 40px;
+}
 h3{
   font-size: 28px;
+  margin: 20px 0 2px;
+  padding-left: 10px;
+}
+ul{
+  padding-left: 20px;
+}
+ul li{
+  color: #0C51A7;
+}
+ul li::marker
+{
+  color: #333333;
+}
+span.purple{
+  color: #591B98;
+}
+span.pink{
+ color: #E5245E;
+}
+span.orange{
+  color: #E95E10;
+}
+footer{
+  text-align: center;
+  margin-bottom: 48px;
+}
+footer img{
+  width: 16px;
+  vertical-align: middle;
 }
